@@ -1,0 +1,81 @@
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+.WF {
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 100px;
+  }
+
+@keyframes sheep{
+    0% {
+        margin-left: 100%;
+        width: 300%;
+
+        transform: scale(-1, 1);
+      }
+    
+    50% {
+        margin-left:0%;
+        transform: scale(1, 1);
+      }
+    100% {
+        margin-left: 0%;
+        width: 100%;
+        transform: scale(-1, 1);
+    }
+}
+
+#sheep {
+    animation-name:sheep;
+    animation-duration:15s;
+    font-size:100px;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+body {
+    background: linear-gradient(162deg,#ffffff,#00ff24,#ff9e87);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+  }
+
+p,li {
+    font-size:1.2rem;
+}
+
+#video
+{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+}
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  
+h2 {
+  color:darkblue !important;
+}
